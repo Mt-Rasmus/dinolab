@@ -6,7 +6,7 @@ function HomePage() {
     const { data, isLoading, error } = useDinosaurs();
     // console.log('dinoData', data, loading, error)
     return(
-        <div className="w-full h-full flex flex-col self-start">
+        <div className="w-full h-full flex flex-col justify-center items-center">
             {error?.message && <p className="text-red-500">{error?.message}</p>}
             {!isLoading && (data ?? []) &&
             data?.slice(0, 10)?.map(dino => (
