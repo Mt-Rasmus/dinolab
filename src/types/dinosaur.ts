@@ -46,4 +46,6 @@ export type Dinosaur = {
   lat: number;
   class: string;
   family: string | null;
+  row_index: number
+  common_name: string
 };

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { type Dinosaur } from '../types/dinosaur'
 
-export default function useDinosaurs() {
+export default function useDinosaurs(): [Dinosaur[], boolean, string | null] {
     const [data, setData] = useState<Dinosaur[]>([])
     const [loading, setLoading] = useState<boolean>(false)
     const [error, setError] = useState<string | null>(null)
