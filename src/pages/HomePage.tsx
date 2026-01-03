@@ -1,14 +1,14 @@
 
-import useDinosaurs from "../hooks/useDinosaurs"
+import useDinosaurs from "../queries/useDinosaurs"
 import { Link } from 'react-router-dom';
 
 function HomePage() {
-    const [ data, loading, error ] = useDinosaurs();
+    const { data, isLoading, error } = useDinosaurs();
     // console.log('dinoData', data, loading, error)
     return(
-        <div>
-            { !!error && error }
-            {!loading && data?.length > 0 &&
+        <div className="w-full h-full flex flex-col self-start">
+            {error?.message && <p className="text-red-500">{error?.message}</p>}
+            {!isLoading && (data ?? []) &&
             data?.slice(0, 10)?.map(dino => (
                 <li className="cursor-pointer" key={dino.row_index}>
                     <Link to={`/dinosaur/${dino.row_index}`}>

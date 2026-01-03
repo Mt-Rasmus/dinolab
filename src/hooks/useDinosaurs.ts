@@ -11,7 +11,6 @@ export default function useDinosaurs(): [Dinosaur[], boolean, string | null] {
             try {
                 setLoading(true)
                 const res = await fetch('/dinos2.json')
-                console.log('hey2222', res);
                 const json = await res.json();
                 console.log('dinosaurData', json);
                 setData(json)
