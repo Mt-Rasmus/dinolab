@@ -1,0 +1,6 @@
+datasets:
+
+https://www.kaggle.com/datasets/smruthiiii/dinosaur-dataset
+https://www.kaggle.com/datasets/canozensoy/dinosaur-genera-dataset
+
+the latter includes weight
