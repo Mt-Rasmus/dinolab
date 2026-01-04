@@ -1,28 +1,27 @@
-
-export type DinosaurDiet = "Carnivore" | "Herbivore" | "Omnivore";
-export type DinosaurLocomotion = "Bipedal" | "Quadrupedal";
-export type DinosaurIntelligence = "Low" | "Medium" | "High";
+export type DinosaurDiet = 'Carnivore' | 'Herbivore' | 'Omnivore';
+export type DinosaurLocomotion = 'Bipedal' | 'Quadrupedal';
+export type DinosaurIntelligence = 'Low' | 'Medium' | 'High';
 export type GeologicalPeriod =
-  | "Early Jurassic"
-  | "Middle Jurassic"
-  | "Late Jurassic"
-  | "Early Cretaceous"
-  | "Late Cretaceous"
-  | "Middle Cretaceous"
+  | 'Early Jurassic'
+  | 'Middle Jurassic'
+  | 'Late Jurassic'
+  | 'Early Cretaceous'
+  | 'Late Cretaceous'
+  | 'Middle Cretaceous'
   | string; // fallback if a period is missing
 
 export type DinosaurType =
-  | "small theropod"
-  | "large theropod"
-  | "sauropod"
-  | "ornithopod"
-  | "ceratopsian"
-  | "thyreophoran"
-  | "pachycephalosaur"
-  | "prosauropod"
-  | "coelurosaur"
-  | "dromaeosaurid"
-  | "";
+  | 'small theropod'
+  | 'large theropod'
+  | 'sauropod'
+  | 'ornithopod'
+  | 'ceratopsian'
+  | 'thyreophoran'
+  | 'pachycephalosaur'
+  | 'prosauropod'
+  | 'coelurosaur'
+  | 'dromaeosaurid'
+  | '';
 
 export type Dinosaur = {
   row_index: number;
