@@ -2,7 +2,7 @@
 function Header() {
     return (
         <div className="flex flex-col mt-2">
-            <div className="font-bold text-lg mb-2">
+            <div className="font-bold text-2xl mb-2">
                 DinoLab
             </div>
             <div>
